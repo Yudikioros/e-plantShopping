@@ -59,6 +59,15 @@ body {
     justify-content: center;
 }
 
+.section-heading {
+    width: 99vw;
+  text-align: center;
+  margin: 10px;
+  padding: 2px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
 /* Product Card */
 .product-card {
     flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap */
@@ -74,6 +83,13 @@ body {
     gap: 20px;
 }
 
+.cart-badge {
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  font-size: 20px;
+}
+
 /* Pseudo-classes - Hover effect on product button */
 .product-card:hover {
     transform: scale(1.05);
@@ -83,6 +99,11 @@ body {
 
 .product-title {
     font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
@@ -103,6 +124,16 @@ body {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.product-button-disabled {
+    background-color: gray;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: not-allowed;
     transition: background-color 0.3s ease-in-out;
     margin-top: 10px;
 }
